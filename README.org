@@ -38,3 +38,6 @@ digit is being drawn it is quite fun to play around with.
 #+BEGIN_CENTER
 file:./example/example2.gif
 #+END_CENTER
+
+** Credit
+The starting point for this project was [[https://machinelearningmastery.com/handwritten-digit-recognition-using-convolutional-neural-networks-python-keras/][this tutorial]].

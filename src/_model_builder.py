@@ -4,6 +4,8 @@ from keras.models import Sequential, model_from_json
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers.convolutional import Conv2D, MaxPooling2D
 
+# some code based on: https://machinelearningmastery.com/handwritten-digit-recognition-using-convolutional-neural-networks-python-keras/
+
 class Network:
     """class for the model input must be of type Dataset"""
     def __init__(self, data, model_type):
