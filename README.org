@@ -1,16 +1,16 @@
-* Handwritten digit detection
+* Handwritten digit recognition
 ** Overview
-This program uses machine learning to predict handwritten digits in
-real time. The multi-layer perceptrons neural network model is used and is
-implemented using the Python library [[https://keras.io/][Keras]], which uses [[https://www.tensorflow.org/][Tensorflow]] as
-the backend. The [[http://yann.lecun.com/exdb/mnist/][MNIST database]] of handwritten digits is used to train
-the model.
+This program uses machine learning to predict the values handwritten
+digits. The multi-layer perceptrons neural network model
+is used and is implemented using the Python library [[https://keras.io/][Keras]], which uses
+[[https://www.tensorflow.org/][Tensorflow]] as the backend. The [[http://yann.lecun.com/exdb/mnist/][MNIST database]] of handwritten digits is
+used to train the model.
 ** Installation and Use
 *** Requirements
- 1. Keras for the machine learning
- 2. Pillow for image processing
- 3. Numpy for data manipulation
- 4. Pygame for the GUI and drawing tools
+ 1. [[https://keras.io/][Keras]] for the machine learning
+ 2. [[https://pillow.readthedocs.io/en/latest/][Pillow]] for image processing
+ 3. [[http://www.numpy.org/][Numpy]] for data manipulation
+ 4. [[https://www.pygame.org][Pygame]] for the GUI and drawing tools
 See [[file:./requirements.txt][requirements.txt]] for more details.
 *** Training the model
 To train the model run ~python ./src/MLP_model.py~. The model will be saved
@@ -33,12 +33,13 @@ from 0-9. It does well for the most part.
 #+END_CENTER
 
 In this example you can see how the prediction changes as more detail
-to the digit is added. Since the program predicts in real-time as the
+to the digit is added. Since the program predicts the value as the
 digit is being drawn it is quite fun to play around with.
 
 #+BEGIN_CENTER
-file:./example/example2.gif
+[[file:./example/example2.gif]]
 #+END_CENTER
 
 ** Credit
-The starting point for this project was [[https://machinelearningmastery.com/handwritten-digit-recognition-using-convolutional-neural-networks-python-keras/][this tutorial]].
+The starting point for this project was [[https://machinelearningmastery.com/handwritten-digit-recognition-using-convolutional-neural-networks-python-keras/][this tutorial]]. [[https://stackoverflow.com/questions/597369/how-to-create-ms-paint-clone-with-python-and-pygame][This
+page]] on Stack Overflow helped me with the GUI.
