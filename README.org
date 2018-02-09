@@ -12,13 +12,14 @@ the model.
  3. Numpy for data manipulation
  4. Pygame for the GUI and drawing tools
 See [[file:./requirements.txt][requirements.txt]] for more details.
-*** Training
+*** Training the model
 To train the model run ~python ./src/MLP_model.py~. The model will be saved
 in the =./model= and =./weights= directories.
-*** Read a digit from a file
+*** Reading a digit from a file
 To predict a digit from an image file (=./data/number.jpg=) run ~python
-./src/read_digit.py~
-*** Draw a digit
+./src/read_digit.py~. If you would like to replace it with your own
+file make sure the format and size are consistent with the example.
+*** Drawing a digit
 To predict a digit as you draw it run ~python ./src/gui.py~. Draw by
 holding down the left mouse button, the prediction will be made
 whenever you lift the mouse button. Clear the screen by pressing the
