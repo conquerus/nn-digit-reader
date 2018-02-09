@@ -6,6 +6,7 @@ import _model_builder
 
 def read():
     """detect what digit is in ./data/number.jpg"""
+
     # load json and create model
     base_model = _model_builder.Network(0, model_type="load_model")
 
@@ -21,6 +22,7 @@ def read():
         for i in range(0, 28):
             digit_flat[0][counter] = (digit.getpixel((i, j)))/255.0
             counter = counter+1
+
     #predict
     os.system('clear')
     base_model.predict(digit_flat)

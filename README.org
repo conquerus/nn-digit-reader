@@ -1,0 +1,40 @@
+* Handwritten digit detection
+** Overview
+This program uses machine learning to predict handwritten digits in
+real time. The multi-layer perceptrons neural network model is used and is
+implemented using the Python library [[https://keras.io/][Keras]], which uses [[https://www.tensorflow.org/][Tensorflow]] as
+the backend. The [[http://yann.lecun.com/exdb/mnist/][MNIST database]] of handwritten digits is used to train
+the model.
+** Installation and Use
+*** Requirements
+ 1. Keras for the machine learning
+ 2. Pillow for image processing
+ 3. Numpy for data manipulation
+ 4. Pygame for the GUI and drawing tools
+See [[file:./requirements.txt][requirements.txt]] for more details.
+*** Training
+To train the model run ~python ./src/MLP_model.py~. The model will be saved
+in the =./model= and =./weights= directories.
+*** Read a digit from a file
+To predict a digit from an image file (=./data/number.jpg=) run ~python
+./src/read_digit.py~
+*** Draw a digit
+To predict a digit as you draw it run ~python ./src/gui.py~. Draw by
+holding down the left mouse button, the prediction will be made
+whenever you lift the mouse button. Clear the screen by pressing the
+right mouse button.
+** Example
+Here is an example of the program predicting the handwritten digits
+from 0-9. It does well for the most part.
+
+#+BEGIN_CENTER
+[[file:./example/example.gif]]
+#+END_CENTER
+
+In this example you can see how the prediction changes as more detail
+to the digit is added. Since the program predicts in real-time as the
+digit is being drawn it is quite fun to play around with.
+
+#+BEGIN_CENTER
+file:./example/example2.gif
+#+END_CENTER
